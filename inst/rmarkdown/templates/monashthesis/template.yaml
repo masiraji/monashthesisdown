@@ -1,0 +1,4 @@
+name: monashthesis
+description: >
+ A template for creating a PhD thesis  using RMarkdown based on the guidelines of Monash University thesis guidelines 
+create_dir: FALSE
