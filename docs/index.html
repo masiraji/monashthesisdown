@@ -50,7 +50,14 @@
   <a href="news/index.html">Changelog</a>
 </li>
       </ul>
-<ul class="nav navbar-nav navbar-right"></ul>
+<ul class="nav navbar-nav navbar-right">
+<li>
+  <a href="https://github.com/masiraji/monashthesisdown/">
+    <span class="fab fa-github fa-lg"></span>
+     
+  </a>
+</li>
+      </ul>
 </div>
 <!--/.nav-collapse -->
   </div>
@@ -93,7 +100,7 @@ tinytex:::is_tinytex()
 <ol>
 <li><p>Make sure you have LaTeX and the latest version of RStudio.</p></li>
 <li>
-<p>Install bookdown and thesisdown packages</p>
+<p>Install <strong>bookdown, monashthesisdown</strong> and <strong>thesisdown</strong> packages</p>
 <pre class="{r}"><code>if (!require("remotes")) 
   install.packages("remotes", repos = "https://cran.rstudio.org")
 remotes::install_github("rstudio/bookdown")
@@ -169,7 +176,16 @@ bookdown::render_book("index.Rmd", "bookdown::pdf_book")
   </div>
 
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
-    <div class="license">
+    <div class="links">
+<h2>Links</h2>
+<ul class="list-unstyled">
+<li>Browse source code at <br><a href="https://github.com/masiraji/monashthesisdown/">https://​github.com/​masiraji/​monashthesisdown/​</a>
+</li>
+<li>Report a bug at <br><a href="https://github.com/masiraji/monashthesisdown/issues">https://​github.com/​masiraji/​monashthesisdown/​issues</a>
+</li>
+</ul>
+</div>
+<div class="license">
 <h2>License</h2>
 <ul class="list-unstyled">
 <li><a href="LICENSE.html">Full license</a></li>

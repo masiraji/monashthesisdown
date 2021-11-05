@@ -35,7 +35,7 @@ To use monashthesisdown with your R studio:
 
 1.  Make sure you have LaTeX and the latest version of RStudio.
 
-2.  Install bookdown and thesisdown packages
+2.  Install **bookdown, monashthesisdown** and **thesisdown** packages
 
     ```{r}
     if (!require("remotes")) 
