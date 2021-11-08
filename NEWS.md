@@ -2,7 +2,7 @@
 
 # monashthesisdown 0.1.0.9002
 
-* Authours can now change the position of TOC
+* Authors can now change the position of TOC
 
 
 # monashthesisdown 0.1.0.9001
