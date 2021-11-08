@@ -8,7 +8,9 @@
 
 This is a minimal Thesis template based on R Markdown, [bookdown](https://github.com/rstudio/bookdown) and [thesisdown](https://github.com/ismayc/thesisdown). This template originally designed to work with the Monash University Thesis guidelines. Currently this template is functional in knitting gitbook and PDF version.
 
-The monashthesis.tex and monashthesis.cls are collected from Prof' Rob J Hyndman's [github repository](https://github.com/robjhyndman/MonashThesis) and modified to the updated guidlines. I have commented out **186 number** line in **monashthesis.cls** to sync with the guideline. If you want a logo please activate line 186.
+The monashthesis.tex and monashthesis.cls are collected from Prof' Rob J Hyndman's [github repository](https://github.com/robjhyndman/MonashThesis) and modified to the updated guidlines. If you dont want the monash logo commentout **188 number** line in [\\includegraphics[width=15cm]{figures/monash-logo}] **monashthesis.cls**.
+
+In this template, **copyright**, **abstract**, **declaration**, **acknowledgement**, and **preface** come before table of content as advised by the latest [template guideline](https://www.intranet.monash/graduate-research/assets/pdf/template-thesis-preliminary-pages-10.docx).
 
 ## Current Functional Output
 
@@ -48,7 +50,7 @@ To use monashthesisdown with your R studio:
 
 After installing these restart your Rstudio.
 
-3\. In Rstudio you can get started with monashthesisdown by clicking **File** \> **New Project** \> **New Directory and** selecting **Thesis project using monashthesisdown**
+3\. In Rstudio you can get started with monashthesisdown by clicking **File** > **New Project** > **New Directory and** selecting **Thesis project using monashthesisdown**
 
 ![](man/figures/demo_1.jpg)
 
@@ -56,7 +58,7 @@ Next, give your project a name and specify where you'd like the files to appear.
 
 ![](man/figures/demo_2.jpg)
 
-### **Day-to-day writing of your thesis**
+## **Day-to-day writing of your thesis**
 
 Each chapter of your thesis should be in different .Rmd files. If you want specific LaTeX packages to add, put them in monashthesis.tex. This template provides a skeleton file structure that you can edit to create your thesis. Edit the \*\*\_bookdown.yml\*\* file to set the order in which you'd like them to appear. It's recommended that you version control your thesis using GitHub if possible. see this [link](https://happygitwithr.com) to know more about github based version controlling in Rstudio.
 
@@ -69,6 +71,28 @@ bookdown::render_book("index.Rmd", "bookdown::gitbook")
 bookdown::render_book("index.Rmd", "bookdown::pdf_book")
 
 ```
+
+## **Changing the position of Table of Content**
+
+## Toc after the title page
+
+-   In this template, table of content comes after preface. If you want your table of content just after the title page remove the following two latex command from the **00-preface.Rmd** file.
+
+`\newpage`
+
+`\setstretch{1.2}\sf\tighttoc\doublespacing`
+
+-   And you also need to activate line number 34 in **monasthesis.tex** containing the following latex command
+
+`{\setstretch{1.2}\sf\tighttoc\doublespacing}`.
+
+## Placing the Toc wherever you wish
+
+-   You can place your Toc wherever you want by removing the the following command lines from **00-preface.Rmd and placing them** in the respective Rmd files:
+
+    `\newpage`
+
+    `\setstretch{1.2}\sf\tighttoc\doublespacing`
 
 ## **Components**
 

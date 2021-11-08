@@ -11,4 +11,6 @@ The contribution in Chapter \ref{ch:litreview} of this thesis was presented in t
 <!-- 
 The following line is required to re-set page numbering after preliminary material. Do not remove
 -->
+\newpage
+\setstretch{1.2}\sf\tighttoc\doublespacing
 \clearpage\pagenumbering{arabic}\setcounter{page}{0}

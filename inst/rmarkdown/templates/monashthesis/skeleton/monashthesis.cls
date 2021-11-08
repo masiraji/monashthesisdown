@@ -185,7 +185,7 @@
 \def\titlepage{{\sf
     \thispagestyle{empty}%
     \null\vskip1cm%
-    %%\includegraphics[width=15cm]{figures/monash-logo}
+    \includegraphics[width=15cm]{figures/monash-logo}
     \vfill
     \begin{center}
         \Large\textbf{\expandafter{\@title}}\\
