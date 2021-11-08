@@ -76,15 +76,27 @@ bookdown::render_book("index.Rmd", "bookdown::pdf_book")
 
 ## Toc after the title page
 
--   In this template, table of content comes after preface. If you want your table of content just after the title page remove the following two latex command from the **00-preface.Rmd** file.
+-   In this template, table of content comes after preface. If you want your table of content just after the title page remove the following latex commands from the **00-preface.Rmd** file.
 
 `\newpage`
 
 `\setstretch{1.2}\sf\tighttoc\doublespacing`
 
--   And you also need to activate line number 34 in **monasthesis.tex** containing the following latex command
+`\newpage`
 
-`{\setstretch{1.2}\sf\tighttoc\doublespacing}`.
+`\listoftables`
+
+`\newpage`
+
+`\listoffigures`
+
+-   And you also need to activate lines number 34-36 in **monasthesis.tex** containing the following latex command
+
+`{\setstretch{1.2}\sf\tighttoc\doublespacing}`
+
+`\listoftables`
+
+`\listoffigures`
 
 ## Placing the Toc wherever you wish
 
@@ -93,6 +105,14 @@ bookdown::render_book("index.Rmd", "bookdown::pdf_book")
     `\newpage`
 
     `\setstretch{1.2}\sf\tighttoc\doublespacing`
+
+    `\newpage`
+
+    `\listoftables`
+
+    `\newpage`
+
+    `\listoffigures`
 
 ## **Components**
 

@@ -140,14 +140,20 @@ bookdown::render_book("index.Rmd", "bookdown::pdf_book")
 <h2 class="hasAnchor">
 <a href="#toc-after-the-title-page" class="anchor"></a>Toc after the title page</h2>
 <ul>
-<li>In this template, table of content comes after preface. If you want your table of content just after the title page remove the following two latex command from the <strong>00-preface.Rmd</strong> file.</li>
+<li>In this template, table of content comes after preface. If you want your table of content just after the title page remove the following latex commands from the <strong>00-preface.Rmd</strong> file.</li>
 </ul>
 <p><code>\newpage</code></p>
 <p><code>\setstretch{1.2}\sf\tighttoc\doublespacing</code></p>
+<p><code>\newpage</code></p>
+<p><code>\listoftables</code></p>
+<p><code>\newpage</code></p>
+<p><code>\listoffigures</code></p>
 <ul>
-<li>And you also need to activate line number 34 in <strong>monasthesis.tex</strong> containing the following latex command</li>
+<li>And you also need to activate lines number 34-36 in <strong>monasthesis.tex</strong> containing the following latex command</li>
 </ul>
-<p><code>{\setstretch{1.2}\sf\tighttoc\doublespacing}</code>.</p>
+<p><code>{\setstretch{1.2}\sf\tighttoc\doublespacing}</code></p>
+<p><code>\listoftables</code></p>
+<p><code>\listoffigures</code></p>
 </div>
 <div id="placing-the-toc-wherever-you-wish" class="section level2">
 <h2 class="hasAnchor">
@@ -157,6 +163,10 @@ bookdown::render_book("index.Rmd", "bookdown::pdf_book")
 <p>You can place your Toc wherever you want by removing the the following command lines from <strong>00-preface.Rmd and placing them</strong> in the respective Rmd files:</p>
 <p><code>\newpage</code></p>
 <p><code>\setstretch{1.2}\sf\tighttoc\doublespacing</code></p>
+<p><code>\newpage</code></p>
+<p><code>\listoftables</code></p>
+<p><code>\newpage</code></p>
+<p><code>\listoffigures</code></p>
 </li>
 </ul>
 </div>
