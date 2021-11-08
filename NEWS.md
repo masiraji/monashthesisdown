@@ -1,5 +1,10 @@
 <!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
 
+# monashthesisdown 0.1.0.9002
+
+* Authours can now change the position of TOC
+
+
 # monashthesisdown 0.1.0.9001
 
 * Stable and working version based on bookdown
